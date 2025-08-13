@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularDatacomm_2025_Aug';
+    firstName = "John";
+
+    johnLocation = "";
+
+    getLocation(value:any){
+       console.log("Trigger from child");
+       console.log(value);
+       this.johnLocation = value;
+    }
+
+
 }
